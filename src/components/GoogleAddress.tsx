@@ -1,5 +1,5 @@
 import Autocomplete from "react-google-autocomplete";
-const GOOGLE_API_KEY = 'AIzaSyCEUYa_jJGDsoq3hugOAL_3nzn0lolNGBk';
+const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 const GoogleAddress = ({ className, onPlaceChange }: { className?: string, onPlaceChange: (_: string) => void }) => {
     return (
         <>

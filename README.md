@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	<a href="https://seniorcoder72.github.io/">Trademarktoday-nextjs</a> - v1.2
+	<a href="https://dodger213.github.io/">Trade-Mark-Today</a> - v1.2
 	<p align="center">
 		<img alt="Open Source? Yes!" src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" /> 
 		<img alt="nodejs" src="https://badgen.net/badge/node/js?icon=github" /> 
@@ -18,34 +18,34 @@
 <br/>
 
 <div align="center">
-	<a href="https://github.com/seniorcoder72/trademarktoday-nextjs">
+	<a href="https://github.com/dodger213/Trade-Mark-Today">
 		<img src="https://avatars.githubusercontent.com/u/132613676?v=4" alt="Logo" width="200" height="200"/>
 	</a>
-	<h3 align="center">Senior Coder (seniorcoder72) </h3>
+	<h3 align="center">Mitsuru Kudo (dodger213) </h3>
 	<p align="center">
 		This is the source code for my Freelancer account creating bot.
 		<br/>
-        This project is maintained by <a href='https://seniorcoder72.github.io'>@seniorcoder72</a>
+        This project is maintained by <a href='https://dodger213.github.io'>@dodger213</a>
 		<br/>
         <strong>Don't forget to star ⭐ this repository.</strong>
         <br/>
-		<a href="https://seniorcoder72.github.io">Explore the docs »</a>
+		<a href="https://dodger213.github.io">Explore the docs »</a>
 		<br/>
 		<br/>
 		<a href="https://trademarktoday.com.au">Visit Site</a>
 		·
-		<a href="https://github.com/seniorcoder72/trademarktoday-nextjs/issues/new?assignees=seniorcoder72&labels=bug&template=bug_report.yml&title=%5BBUG%5D%3A+">Report Bug</a>
+		<a href="https://github.com/dodger213/Trade-Mark-Today/issues/new?assignees=dodger213&labels=bug&template=bug_report.yml&title=%5BBUG%5D%3A+">Report Bug</a>
 		·
-		<a href="https://github.com/seniorcoder72/trademarktoday-nextjs/issues/new?assignees=seniorcoder72&labels=enhancement&template=feature_request.yml&title=%5BFEAT%5D%3A+">Request Feature</a>
+		<a href="https://github.com/dodger213/Trade-Mark-Today/issues/new?assignees=dodger213&labels=enhancement&template=feature_request.yml&title=%5BFEAT%5D%3A+">Request Feature</a>
 	</p>
 	<p align="center">
-		<img alt="nodejs" src="https://img.shields.io/github/contributors/seniorcoder72/trademarktoday-nextjs.svg?styles/default/yes.svg" /> 
-		<img alt="nodejs" src="https://img.shields.io/github/forks/seniorcoder72/trademarktoday-nextjs.svg?styles/default/yes.svg" /> 
-		<img alt="nodejs" src="https://img.shields.io/github/commits-since/seniorcoder72/trademarktoday-nextjs/v1.0.0" /> 
-		<img alt="nodejs" src="https://img.shields.io/github/commit-activity/t/seniorcoder72/trademarktoday-nextjs" /> 
-		<img alt="nodejs" src="https://img.shields.io/github/stars/seniorcoder72/trademarktoday-nextjs.svg?styles/default/yes.svg" /> 
-		<img alt="nodejs" src="https://img.shields.io/github/issues/seniorcoder72/trademarktoday-nextjs.svg?styles/default/yes.svg" /> 
-		<img alt="nodejs" src="https://img.shields.io/github/repo-size/seniorcoder72/trademarktoday-nextjs.svg?styles/default/yes.svg)" />  
+		<img alt="nodejs" src="https://img.shields.io/github/contributors/dodger213/Trade-Mark-Today.svg?styles/default/yes.svg" /> 
+		<img alt="nodejs" src="https://img.shields.io/github/forks/dodger213/Trade-Mark-Today.svg?styles/default/yes.svg" /> 
+		<img alt="nodejs" src="https://img.shields.io/github/commits-since/dodger213/Trade-Mark-Today/v1.0.0" /> 
+		<img alt="nodejs" src="https://img.shields.io/github/commit-activity/t/dodger213/Trade-Mark-Today" /> 
+		<img alt="nodejs" src="https://img.shields.io/github/stars/dodger213/Trade-Mark-Today.svg?styles/default/yes.svg" /> 
+		<img alt="nodejs" src="https://img.shields.io/github/issues/dodger213/Trade-Mark-Today.svg?styles/default/yes.svg" /> 
+		<img alt="nodejs" src="https://img.shields.io/github/repo-size/dodger213/Trade-Mark-Today.svg?styles/default/yes.svg)" />  
 	</p>
 </div>
 
@@ -53,8 +53,8 @@
 
 This is for <a href='https://trademarktoday.com.au'>trademarktoday.com.au</a>
 
-![Trademarktoday](https://github.com/LouisWinkler/trademarktoday-nextjs/blob/master/public/01.png?raw=true)
-![Trademarktoday](https://github.com/LouisWinkler/trademarktoday-nextjs/blob/master/public/02.png?raw=true)
+![Trademarktoday](https://github.com/dodger213/Trade-Mark-Today/blob/master/public/01.png?raw=true)
+![Trademarktoday](https://github.com/dodger213/Trade-Mark-Today/blob/master/public/02.png?raw=true)
 ## Built With :package:
 <p>
 <img alt="Node.js" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
@@ -85,17 +85,17 @@ This is for <a href='https://trademarktoday.com.au'>trademarktoday.com.au</a>
 - Clone the repository :
     - With HTTPS:
       ```bash
-      git clone https://github.com/seniorcoder72/trademarktoday-nextjs.git
+      git clone https://github.com/dodger213/Trade-Mark-Today.git
       ```
     - With SSH:
       ```bash
-      git@github.com:seniorcoder72/trademarktoday-nextjs.git
+      git@github.com:dodger213/Trade-Mark-Today.git
       ```
       
 - Navigate to working Directory and **master** branch
 
 	```bash
-	cd trademarktoday-nextjs
+	cd Trade-Mark-Today
 	```
    
 - Install the dependencies:
@@ -126,7 +126,7 @@ This is for <a href='https://trademarktoday.com.au'>trademarktoday.com.au</a>
 
 Contributions, Issues and Feature requests are Welcome!
 
-Feel free to check the [Issues page](https://github.com/seniorcoder72/trademarktoday-nextjs/issues/).
+Feel free to check the [Issues page](https://github.com/dodger213/Trade-Mark-Today/issues/).
 
 
 ## Contributors ✨
@@ -140,8 +140,8 @@ Feel free to check the [Issues page](https://github.com/seniorcoder72/trademarkt
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/seniorcoder72"><img src="https://avatars.githubusercontent.com/u/132613676?v=4?s=100" width="100px;" alt="Senior Developer"/><br /><sub><b>Senior Developer</b></sub></a><br /><a href="https://github.com/seniorcoder72/trademarktoday-nextjs/commits?author=seniorcoder72" title="Code">💻</a> <a href="#content-seniorcoder72" title="Content">🖋</a> <a href="https://github.com/seniorcoder72/trademarktoday-nextjs/commits?author=seniorcoder72" title="Documentation">📖</a> <a href="#data-seniorcoder72" title="Data">🔣</a> <a href="#example-seniorcoder72" title="Examples">💡</a> <a href="#ideas-seniorcoder72" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-seniorcoder72" title="Project Management">📆</a> <a href="https://github.com/seniorcoder72/trademarktoday-nextjs/pulls?q=is%3Apr+reviewed-by%3Aseniorcoder72" title="Reviewed Pull Requests">👀</a> <a href="#tool-seniorcoder72" title="Tools">🔧</a> <a href="#tutorial-seniorcoder72" title="Tutorials">✅</a> <a href="#video-seniorcoder72" title="Videos">📹</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LouisWinkler"><img src="https://avatars.githubusercontent.com/u/138194633?v=4?s=100" width="100px;" alt="LouisWinkler"/><br /><sub><b>LouisWinkler</b></sub></a><br /><a href="https://github.com/seniorcoder72/trademarktoday-nextjs/commits?author=LouisWinkler" title="Code">💻</a> <a href="#content-LouisWinkler" title="Content">🖋</a> <a href="https://github.com/seniorcoder72/trademarktoday-nextjs/commits?author=LouisWinkler" title="Documentation">📖</a> <a href="#data-LouisWinkler" title="Data">🔣</a> <a href="#example-LouisWinkler" title="Examples">💡</a> <a href="#ideas-LouisWinkler" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-LouisWinkler" title="Project Management">📆</a> <a href="https://github.com/seniorcoder72/trademarktoday-nextjs/pulls?q=is%3Apr+reviewed-by%3ALouisWinkler" title="Reviewed Pull Requests">👀</a> <a href="#tool-LouisWinkler" title="Tools">🔧</a> <a href="#tutorial-LouisWinkler" title="Tutorials">✅</a> <a href="#video-LouisWinkler" title="Videos">📹</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/dodger213"><img src="https://avatars.githubusercontent.com/u/132613676?v=4?s=100" width="100px;" alt="Senior Developer"/><br /><sub><b>Senior Developer</b></sub></a><br /><a href="https://github.com/dodger213/Trade-Mark-Today/commits?author=dodger213" title="Code">💻</a> <a href="#content-dodger213" title="Content">🖋</a> <a href="https://github.com/dodger213/Trade-Mark-Today/commits?author=dodger213" title="Documentation">📖</a> <a href="#data-dodger213" title="Data">🔣</a> <a href="#example-dodger213" title="Examples">💡</a> <a href="#ideas-dodger213" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-dodger213" title="Project Management">📆</a> <a href="https://github.com/dodger213/Trade-Mark-Today/pulls?q=is%3Apr+reviewed-by%3Adodger213" title="Reviewed Pull Requests">👀</a> <a href="#tool-dodger213" title="Tools">🔧</a> <a href="#tutorial-dodger213" title="Tutorials">✅</a> <a href="#video-dodger213" title="Videos">📹</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LouisWinkler"><img src="https://avatars.githubusercontent.com/u/138194633?v=4?s=100" width="100px;" alt="LouisWinkler"/><br /><sub><b>LouisWinkler</b></sub></a><br /><a href="https://github.com/dodger213/Trade-Mark-Today/commits?author=LouisWinkler" title="Code">💻</a> <a href="#content-LouisWinkler" title="Content">🖋</a> <a href="https://github.com/dodger213/Trade-Mark-Today/commits?author=LouisWinkler" title="Documentation">📖</a> <a href="#data-LouisWinkler" title="Data">🔣</a> <a href="#example-LouisWinkler" title="Examples">💡</a> <a href="#ideas-LouisWinkler" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-LouisWinkler" title="Project Management">📆</a> <a href="https://github.com/dodger213/Trade-Mark-Today/pulls?q=is%3Apr+reviewed-by%3ALouisWinkler" title="Reviewed Pull Requests">👀</a> <a href="#tool-LouisWinkler" title="Tools">🔧</a> <a href="#tutorial-LouisWinkler" title="Tutorials">✅</a> <a href="#video-LouisWinkler" title="Videos">📹</a></td>
     </tr>
   </tbody>
 </table>
