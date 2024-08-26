@@ -1,0 +1,55 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "seniorcoder72",
+      "name": "Senior Developer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132613676?v=4",
+      "profile": "https://github.com/seniorcoder72",
+      "contributions": [
+        "code",
+        "content",
+        "doc",
+        "data",
+        "example",
+        "ideas",
+        "projectManagement",
+        "review",
+        "tool",
+        "tutorial",
+        "video"
+      ]
+    },
+    {
+      "login": "LouisWinkler",
+      "name": "LouisWinkler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138194633?v=4",
+      "profile": "https://github.com/LouisWinkler",
+      "contributions": [
+        "code",
+        "content",
+        "doc",
+        "data",
+        "example",
+        "ideas",
+        "projectManagement",
+        "review",
+        "tool",
+        "tutorial",
+        "video"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "trademarktoday-nextjs",
+  "projectOwner": "seniorcoder72"
+}

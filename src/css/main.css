@@ -1,0 +1,68 @@
+@import "tailwind/_base.css";
+@import "tailwind/_components.css";
+@import "tailwind/_utilities.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif !important;
+}
+
+html,
+body,
+#__next,
+#__next>div {
+  height: 100%;
+}
+
+@keyframes badgeflowing {
+  0% {
+    top: -8px;
+  }
+
+  30% {
+    top: -8px;
+  }
+
+  33% {
+    top: -64px;
+  }
+
+  63% {
+    top: -64px;
+  }
+
+  66% {
+    top: -124px;
+  }
+
+  96% {
+    top: -124px;
+  }
+
+  100% {
+    top: -176px;
+  }
+}
+
+
+input:invalid {
+  border: 2px solid red;
+  outline: none;
+}
+
+.react-tel-input .invalid-number {
+  border: 1px solid red !important;
+}
+
+ul.country-list {
+  z-index: 100 !important;
+}
+
+input:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  ;
+}
