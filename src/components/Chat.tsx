@@ -78,11 +78,11 @@ export default function Chat() {
       ]);
       setTabhidden((th) => {
         if (th) {
-            setNotificationMessage(`${msg.author}:${msg.message}`)
-            changeFav('/trademarktoday-badge.ico')
+          setNotificationMessage(`${msg.author}:${msg.message}`)
+          changeFav('/trademarktoday-badge.ico')
         }
         return th;
-    })
+      })
       socket?.emit("viewed", { channel: email, author: username, message: 'viewed' })
     });
     socket.on('disconnected', (msg: Message) => {
