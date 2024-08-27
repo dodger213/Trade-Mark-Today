@@ -33,12 +33,14 @@ export default function ChatAdmin() {
   const handleVisibilityChange = () => {
     setTabhidden(document.hidden);
   };
+  
   useEffect(() => {
     document.addEventListener('visibilitychange', handleVisibilityChange);
     return () => {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [])
+
   useEffect(() => {
     socketInitializer();
     return () => {
@@ -47,7 +49,9 @@ export default function ChatAdmin() {
       }
     };
   }, []);
+
   const [notificationMessage, setNotificationMessage] = useState('')
+
   const handleNewIncomingMessage = (msg: Message) => {
     socket.emit("repeatMsg", { channel: msg.channel, author: msg.author, message: msg.message, key: msg.key })
     setMessagesAndCurChannel((currentMsgsAndCurChannel) => {
@@ -75,13 +79,14 @@ export default function ChatAdmin() {
       }
       return th;
     })
-
   }
+
   useEffect(() => {
     if (!tabhidden) {
       changeFav('/trademarktoday.ico')
     }
   }, [tabhidden])
+
   const handleChannelCreated = ({ channel: chn, username }: { channel: string, username: string }) => {
     console.log(channels, chn)
     socket.emit('joinChannel', { channel: chn, username: 'admin' });
@@ -97,11 +102,12 @@ export default function ChatAdmin() {
         curChannel: (chn && currentMsgsAndCurChannel.curChannel.trim() === '') ? chn : currentMsgsAndCurChannel.curChannel
       }
     })
-
   }
+
   const handleNewIncomingTyping = ({ channel, author, message }: Message) => {
     setChannels(prev => prev.map(chn => (chn.name !== channel ? chn : ({ ...chn, typing: message === 'start' }))))
   }
+
   const handleNewIncomingViewed = ({ channel, author, message }: Message) => {
     setMessagesAndCurChannel((currentMsgsAndCurChannel) => {
       const prev_msg = (currentMsgsAndCurChannel.messages && currentMsgsAndCurChannel.messages[channel]) ? currentMsgsAndCurChannel.messages[channel] : []
@@ -113,6 +119,7 @@ export default function ChatAdmin() {
       }
     });
   }
+
   const handleNewIncomingRepeatMsg = ({ key }: Message) => {
     setMessagesAndCurChannel((currentMsgsAndCurChannel) => {
       const prev_msg = (currentMsgsAndCurChannel.messages && currentMsgsAndCurChannel.messages[currentMsgsAndCurChannel.curChannel]) ? currentMsgsAndCurChannel.messages[currentMsgsAndCurChannel.curChannel] : []
@@ -126,6 +133,7 @@ export default function ChatAdmin() {
       }
     });
   }
+
   const handleDeliveredToserver = ({ key }: Message) => {
     setMessagesAndCurChannel((currentMsgsAndCurChannel) => {
       const prev_msg = (currentMsgsAndCurChannel.messages && currentMsgsAndCurChannel.messages[currentMsgsAndCurChannel.curChannel]) ? currentMsgsAndCurChannel.messages[currentMsgsAndCurChannel.curChannel] : []
@@ -179,17 +187,20 @@ export default function ChatAdmin() {
     });
 
   };
+
   useEffect(() => {
     if ((channels.find(chn => chn.name === messagesAndCurChannel.curChannel)?.unreadCount as number) > 0) {
       socket.emit("viewed", { channel: messagesAndCurChannel.curChannel, author: 'Trademarktoday agent', message: 'viewed' })
     }
     setChannels(prev => prev.map(chn => (chn.name !== messagesAndCurChannel.curChannel ? chn : ({ ...chn, unreadCount: 0 }))))
   }, [messagesAndCurChannel])
+
   useEffect(() => {
     if (chatWindow.current) {
       chatWindow.current.scrollTop = chatWindow.current.scrollHeight;
     }
   }, [messagesAndCurChannel])
+
   const sendMessage = async () => {
     if (message.trim() === '') return;
     // channels.filter(chn => chn !== 'admin').forEach(chn => socket.emit("createdMessage", { channel: chn, author: 'Trademarktoday agent', message }))
