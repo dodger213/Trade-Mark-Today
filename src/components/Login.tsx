@@ -12,6 +12,7 @@ const Login = ({ openState: { open, setOpen }, setMsg }: { openState: { open: bo
     email: '',
     password: ''
   })
+
   const handleClick = async () => {
     //!  Validate
     const { email, password } = formData;
@@ -66,4 +67,5 @@ const Login = ({ openState: { open, setOpen }, setMsg }: { openState: { open: bo
     </div>
   )
 }
-export default Login;
+
+export default Login
