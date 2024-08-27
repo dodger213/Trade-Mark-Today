@@ -19,6 +19,7 @@ export const AlertErr = ({ showAlert, msg }: { showAlert: boolean, msg: string }
     </section>
   )
 }
+
 export const Alert2 = ({ msg }: { msg: ReactNode }) => {
   return (
     <section id="alert-container" className="col-span-12">
@@ -32,6 +33,7 @@ export const Alert2 = ({ msg }: { msg: ReactNode }) => {
     </section>
   )
 }
+
 export const Alert3 = ({ msg }: { msg: ReactNode }) => {
   return (
     <section id="alert-container" className="col-span-12">
@@ -42,6 +44,7 @@ export const Alert3 = ({ msg }: { msg: ReactNode }) => {
     </section>
   )
 }
+
 export const Alert4 = () => {
   return (
     <section id="alert-container" className={`col-span-12`}>
