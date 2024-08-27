@@ -23,7 +23,7 @@
 	</a> -->
 	<h3 align="center">Mitsuru Kudo (dodger213) </h3>
 	<p align="center">
-		This is the source code for my Freelancer account creating bot.
+		Trademarktoday supports free initial trade mark check in minutes and registration of your trademark for Australia. Please kick off the process of protecting your brand and have some fun while doing it!
 		<br/>
         This project is maintained by <a href='https://dodger213.github.io'>@dodger213</a>
 		<br/>
