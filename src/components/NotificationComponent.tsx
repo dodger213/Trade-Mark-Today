@@ -37,4 +37,4 @@ const NotificationComponent = ({ msg }: { msg: string }) => {
   return null;
 };
 
-export default NotificationComponent;
+export default NotificationComponent
