@@ -22,7 +22,7 @@ const a11yProps = (index: number) => {
   };
 }
 
-const MyTab = ({ titles, props:{value,setValue}, children }: {
+const MyTab = ({ titles, props: { value, setValue }, children }: {
   titles: string[],
   props: {
     value: number,
@@ -38,6 +38,7 @@ const MyTab = ({ titles, props:{value,setValue}, children }: {
   const handleChangeIndex = (index: number) => {
     setValue(index);
   };
+
   return (
     <>
       {/* <Box sx={{ bgcolor: 'background.paper', width: 500 }}> */}
@@ -45,7 +46,8 @@ const MyTab = ({ titles, props:{value,setValue}, children }: {
       <Tabs
         className='w-full'
         style={{
-          borderBottom: '1px solid #e8e8e8'}}
+          borderBottom: '1px solid #e8e8e8'
+        }}
         value={value}
         onChange={handleChange}
         indicatorColor="secondary"
@@ -56,7 +58,7 @@ const MyTab = ({ titles, props:{value,setValue}, children }: {
         {titles.map((title, index) => (<Tab key={index} label={title} {...a11yProps(index)} />))}
       </Tabs>
       {/* </AppBar> */}
-        {/* <style> {`.react-swipeable-view-container{transition: height .5s, transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s!important; height:${value==0?"200px":"400px"};}`} </style> */}
+      {/* <style> {`.react-swipeable-view-container{transition: height .5s, transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s!important; height:${value==0?"200px":"400px"};}`} </style> */}
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
@@ -69,4 +71,5 @@ const MyTab = ({ titles, props:{value,setValue}, children }: {
     </>
   );
 }
-export default MyTab;
+
+export default MyTab
