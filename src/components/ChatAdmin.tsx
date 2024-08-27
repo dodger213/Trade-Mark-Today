@@ -16,7 +16,9 @@ export const changeFav = (fav: string) => {
   }
   link.href = fav;
 }
+
 let socket: Socket;
+
 export default function ChatAdmin() {
   const [message, setMessage] = useState('');
   const [tabhidden, setTabhidden] = useState(false)
@@ -228,9 +230,6 @@ export default function ChatAdmin() {
       timeoutRef.current = setTimeout(handleToutTypeEnd, 1000);
     }
   };
-
-
-
 
   return (
     <>
