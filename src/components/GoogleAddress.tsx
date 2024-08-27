@@ -1,5 +1,7 @@
 import Autocomplete from "react-google-autocomplete";
+
 const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
+
 const GoogleAddress = ({ className, onPlaceChange }: { className?: string, onPlaceChange: (_: string) => void }) => {
   return (
     <>
@@ -13,4 +15,5 @@ const GoogleAddress = ({ className, onPlaceChange }: { className?: string, onPla
     </>
   )
 }
+
 export default GoogleAddress;
