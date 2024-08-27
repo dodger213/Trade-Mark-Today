@@ -31,13 +31,16 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const url = 'https://trademarktoday-nextjs.vercel.app'
   const image = 'https://trademarktoday-nextjs.vercel.app/01.png'
   const [pinia, setPinia] = useState({});
+
   useEffect(() => {
     const _pinia = JSON.parse(localStorage.getItem('pinia') as string);
     setPinia(_pinia);
   }, [])
+
   useEffect(() => {
     localStorage.setItem('pinia', JSON.stringify(pinia));
   }, [pinia])
+
   return (
     <>
       {
@@ -99,4 +102,5 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     </>
   )
 }
+
 export default MyApp
