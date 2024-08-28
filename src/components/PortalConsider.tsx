@@ -22,11 +22,11 @@ const PortalConsider = ({ title, message, category, img = "" }: {
               <h4 className="text-[16px] leading-7 font-mont text-[#373f46]">{category}</h4>
               :
               <Image alt="image" loading='lazy' src={img} width={80} height={60} />}
-
           </div>
         </div>
       </div>
     </div>
   )
 }
-export default PortalConsider;
+
+export default PortalConsider
