@@ -4,7 +4,6 @@ import { PiniaStore } from "@/store/store";
 import Image from "next/image";
 
 const WrapTimeBar = ({ showBar = true, children }: { showBar?: boolean, children: ReactNode }) => {
-
   return (
     <>
       <div className="flex gap-6">
