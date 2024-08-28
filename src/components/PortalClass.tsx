@@ -2,6 +2,7 @@ import { Checkbox, FormControlLabel, FormGroup } from "@mui/material"
 import { useContext, useEffect, useRef, useState } from "react";
 import { ClassBadge } from "../pages/classify";
 import { PiniaStore } from "@/store/store";
+
 const MyCheckbox = ({ label, handleClick, id, checkedItems }: { label: string, handleClick: (_: { name: string, value: boolean, id: string }) => void, id: string, checkedItems: any[] }) => {
 
   return (
@@ -12,19 +13,23 @@ const MyCheckbox = ({ label, handleClick, id, checkedItems }: { label: string, h
     })} />} label={label} />
   )
 }
+
 const PortalClass = ({ classNo, products, title, setShowBottomCostBar }: { classNo: string, products: any[], title: string, setShowBottomCostBar: React.Dispatch<React.SetStateAction<boolean>> }) => {
   const { pinia, setPinia } = useContext(PiniaStore);
   const [divHeight, setDivHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (contentRef.current) {
       setDivHeight(contentRef.current.scrollHeight);
     }
   }, []);
+
   const [collapsed, setCollapsed] = useState(true);
   const handleCollapse = () => {
     setCollapsed(pre => (!pre));
   }
+
   const handleCheckboxClick = ({ name, value, id }: { name: string, value: boolean, id: string }) => {
     const p_classes = pinia.classes ? (pinia.classes[classNo] ? pinia.classes[classNo] : []) : []; console.log(p_classes)
     setShowBottomCostBar(true)
@@ -41,6 +46,7 @@ const PortalClass = ({ classNo, products, title, setShowBottomCostBar }: { class
       }
     })
   }
+
   return (
     <section className="flex flex-col gap-4 p-4 shadow-[0_2px_5px_#00000040] rounded-lg">
       <div className="flex gap-4 items-center justify-between">
@@ -67,4 +73,5 @@ const PortalClass = ({ classNo, products, title, setShowBottomCostBar }: { class
     </section>
   )
 }
-export default PortalClass;
+
+export default PortalClass
