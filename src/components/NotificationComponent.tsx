@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 
 const NotificationComponent = ({ msg }: { msg: string }) => {
-  // useEffect(() => {
-  //   Notification.requestPermission();    
-  // }, []);
+ 
   useEffect(() => {
     if (!msg) return;
     (async () => {
