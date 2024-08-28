@@ -20,6 +20,7 @@ const WrapTimeBar = ({ showBar = true, children }: { showBar?: boolean, children
     </>
   )
 }
+
 const TimeBarA = ({ title, description, feeType, fee, tooltip, showBar = true }: { title: string, description: string, feeType?: string, fee?: string, tooltip: ReactNode, showBar?: boolean }) => {
   return (
     <WrapTimeBar showBar={showBar}>
@@ -37,6 +38,7 @@ const TimeBarA = ({ title, description, feeType, fee, tooltip, showBar = true }:
     </WrapTimeBar>
   )
 }
+
 export const TimeBarAs = () => {
   const { pinia, setPinia } = useContext(PiniaStore);
   return (
@@ -88,6 +90,7 @@ export const TimeBarAs = () => {
     </div>
   )
 }
+
 const PortalSummaryA = () => {
   const [divHeight, setDivHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -115,4 +118,5 @@ const PortalSummaryA = () => {
     </section>
   )
 }
-export default PortalSummaryA;
+
+export default PortalSummaryA
