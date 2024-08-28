@@ -7,13 +7,13 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { ReactNode, useState } from 'react';
 import SwipeableViews from 'react-swipeable-views-react-18-fix';
+
 interface TabPanelProps {
   children?: ReactNode;
   dir?: string;
   index: number;
   value: number;
 }
-
 
 const a11yProps = (index: number) => {
   return {
