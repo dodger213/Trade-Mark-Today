@@ -3,6 +3,7 @@ import { ReactNode, useContext, useEffect, useRef, useState } from "react";
 import { ClassBadge } from "../pages/classify";
 import Image from "next/image";
 import { PiniaStore } from "@/store/store";
+
 const PortalSummaryB = () => {
   const { pinia, setPinia } = useContext(PiniaStore);
   const [divHeight, setDivHeight] = useState(0);
@@ -73,4 +74,5 @@ const PortalSummaryB = () => {
     </section >
   )
 }
-export default PortalSummaryB;
+
+export default PortalSummaryB
