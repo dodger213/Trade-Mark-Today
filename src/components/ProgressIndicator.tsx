@@ -1,6 +1,7 @@
 import ProgressPane from "./ProgressPane";
 
 export const TMCheckerElement = () => {
+  
   return (
     <div id="page-header" className="flex gap-2 content-center">
       <h3 className='font-mont leading-[28px] text-[18px]'>Trade Mark Today</h3>
@@ -9,6 +10,7 @@ export const TMCheckerElement = () => {
   )
 }
 const ProgressIndicator = ({ stage }: { stage: number }) => {
+
   return (
     <section id="progressIndicator">
       <TMCheckerElement />
@@ -21,4 +23,5 @@ const ProgressIndicator = ({ stage }: { stage: number }) => {
     </section>
   )
 }
-export default ProgressIndicator;
+
+export default ProgressIndicator
