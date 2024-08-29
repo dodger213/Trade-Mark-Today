@@ -17,6 +17,7 @@ const PortalSummaryB = () => {
   const handleCollapse = () => {
     setCollapsed(pre => (!pre));
   }
+
   return (
     <section className="flex flex-col gap-5">
       <div className="flex flex-col shadow-[0_2px_10px_#00000040] rounded-lg">
