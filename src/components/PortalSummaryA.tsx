@@ -40,6 +40,7 @@ const TimeBarA = ({ title, description, feeType, fee, tooltip, showBar = true }:
 
 export const TimeBarAs = () => {
   const { pinia, setPinia } = useContext(PiniaStore);
+  
   return (
     <div className="flex flex-col gap-4 p-8 max-w-[920px]">
       <TimeBarA title="Submit Application Today"
@@ -93,15 +94,18 @@ export const TimeBarAs = () => {
 const PortalSummaryA = () => {
   const [divHeight, setDivHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (contentRef.current) {
       setDivHeight(contentRef.current.scrollHeight);
     }
   }, []);
+
   const [collapsed, setCollapsed] = useState(true);
   const handleCollapse = () => {
     setCollapsed(pre => (!pre));
   }
+
   return (
     <section className="flex flex-col gap-5">
       <div className="flex flex-col shadow-[0_2px_10px_#00000040] rounded-lg">
