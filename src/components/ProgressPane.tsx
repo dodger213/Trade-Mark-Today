@@ -34,4 +34,5 @@ const ProgressPane = ({ className, title }: {
     </>
   )
 }
-export default ProgressPane;
+
+export default ProgressPane
