@@ -8,11 +8,13 @@ const PortalSummaryB = () => {
   const { pinia, setPinia } = useContext(PiniaStore);
   const [divHeight, setDivHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (contentRef.current) {
       setDivHeight(contentRef.current.scrollHeight);
     }
   }, [pinia]);
+  
   const [collapsed, setCollapsed] = useState(true);
   const handleCollapse = () => {
     setCollapsed(pre => (!pre));
