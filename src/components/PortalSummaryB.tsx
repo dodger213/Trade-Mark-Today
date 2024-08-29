@@ -3,6 +3,7 @@ import { ReactNode, useContext, useEffect, useRef, useState } from "react";
 import { ClassBadge } from "../pages/classify";
 import Image from "next/image";
 import { PiniaStore } from "@/store/store";
+
 const PortalSummaryB = () => {
   const { pinia, setPinia } = useContext(PiniaStore);
   const [divHeight, setDivHeight] = useState(0);
@@ -16,6 +17,7 @@ const PortalSummaryB = () => {
   const handleCollapse = () => {
     setCollapsed(pre => (!pre));
   }
+
   return (
     <section className="flex flex-col gap-5">
       <div className="flex flex-col shadow-[0_2px_10px_#00000040] rounded-lg">
@@ -73,4 +75,5 @@ const PortalSummaryB = () => {
     </section >
   )
 }
-export default PortalSummaryB;
+
+export default PortalSummaryB
