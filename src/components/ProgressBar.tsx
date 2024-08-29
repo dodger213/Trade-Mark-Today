@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 function LinearProgressWithLabel(props: LinearProgressProps & { value: number }) {
+
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Box sx={{ width: '100%', mr: 1 }}>
@@ -19,6 +20,7 @@ function LinearProgressWithLabel(props: LinearProgressProps & { value: number })
 }
 
 export default function ProgressLinearWithValueLabel({ setVar: { uploadProgress, setUploadProgress } }: { setVar: { uploadProgress: number, setUploadProgress: React.Dispatch<React.SetStateAction<number>> } }) {
+  
   return (
     <Box sx={{ width: '100%' }}>
       <LinearProgressWithLabel value={uploadProgress} />
