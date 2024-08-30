@@ -46,6 +46,7 @@ const SignUp = ({ value, openState: { open, setOpen }, setMsg }: { value: number
   const [validPassword, setValidPassword] = useState(true);
   const [validName, setValidName] = useState(true);
   const [validAddress, setValidAddress] = useState(true);
+
   const handleClick = async () => {
     const { email, name, password, ACN, address, phone_number } = otpState.formData;
     setValidEmail(validateEmail(email));
@@ -82,6 +83,7 @@ const SignUp = ({ value, openState: { open, setOpen }, setMsg }: { value: number
       }
     }
   }
+
   return (
     <div className={`flex flex-col gap-4 justify-center items-center ${value === 0 ? 'h-[200px]' : 'h-[500px]'} transition-all ease-in-out`}>
       <div className="flex flex-col">
@@ -117,7 +119,6 @@ const SignUp = ({ value, openState: { open, setOpen }, setMsg }: { value: number
           <svg className='w-4 h-4 absolute left-[14px] top-3 align-baseline inline-block stroke-current fill-[#888888] '><use href="#address"></use></svg>
           <GoogleAddress onPlaceChange={handlePlaceChange} className="w-[220px] h-10 border border-[#f2f2f6] px-4 text-[14px] leading-normal" />
         </div>
-
         {!validAddress && <h4 className="text-[12px] text-red-600">*Please enter your address correctly.</h4>}
       </div>
       <div className="flex flex-col w-[260px]">
@@ -153,4 +154,5 @@ const SignUp = ({ value, openState: { open, setOpen }, setMsg }: { value: number
     </div>
   )
 }
-export default SignUp;
+
+export default SignUp
