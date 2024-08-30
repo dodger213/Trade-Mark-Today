@@ -9,11 +9,13 @@ import { MessageBoxModal, OTPModal } from "./Modal";
 import WaitingLocker from "./WaitingLocker";
 import { OTPStore } from "@/store/store";
 import { validateEmail } from "@/types/utils";
+
 interface MyObject {
   [key: string]: string | number;
 }
 
 export const queryBuilder = (data: MyObject) => Object.keys(data).map(key => `${key}=${encodeURIComponent(data[key])}`).join('&')
+
 const genCode = () => {
   const randomNumber = Math.floor(Math.random() * 900000) + 100000;
   return randomNumber.toString();
