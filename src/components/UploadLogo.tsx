@@ -11,18 +11,7 @@ const UploadLogo = ({ image: { imageDataUrl, setImageDataUrl } }: { image: { ima
     }, [uploadProgress])
     const handleFileInputChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
-        //! readAsDataUrl
-        // if (file) {
-        //     const reader = new FileReader();
-
-        //     reader.onloadend = () => {
-        //         const resultUrl: string = reader.result as string;
-        //         setImageDataUrl(resultUrl);
-        //     };
-
-        //     reader.readAsDataURL(file);
-        // }
-        //! readAsDataUrl
+        
         if (!file) {
             return;
         }
@@ -43,6 +32,7 @@ const UploadLogo = ({ image: { imageDataUrl, setImageDataUrl } }: { image: { ima
             // Handle error
         }
     }
+    
     return (
         <section className="flex justify-center rounded-md min-h-[210px] border border-[#C8CAD0]">
             <div className="flex flex-col justify-center">
