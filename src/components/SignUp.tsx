@@ -20,22 +20,27 @@ const genCode = () => {
   const randomNumber = Math.floor(Math.random() * 900000) + 100000;
   return randomNumber.toString();
 }
+
 const SignUp = ({ value, openState: { open, setOpen }, setMsg }: { value: number, openState: { open: boolean, setOpen: React.Dispatch<React.SetStateAction<boolean>> }, setMsg: React.Dispatch<React.SetStateAction<string>> }) => {
   const { otpState, dispatchOtpState } = useContext(OTPStore);
   const [checked, setChecked] = useState(false);
   const router = useRouter();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     dispatchOtpState({ type: 'CHANGE_FORMDATA', payload: { value: { [name]: value } } })//({ ...prev, [name]: value })
   }
+
   const handlePlaceChange = (place: any) => {
     console.log(place)
     const address = place.name ? place.name : place.formatted_address;
     dispatchOtpState({ type: 'CHANGE_FORMDATA', payload: { value: { address } } })
   }
+
   const handlePhoneChage = (phone: string, cc: any, __: any, phoneformat: string) => {
     dispatchOtpState({ type: 'CHANGE_FORMDATA', payload: { value: { phone_number: phoneformat } } })
   }
+  
   //!  Validate
   const [validEmail, setValidEmail] = useState(true);
   const [validPassword, setValidPassword] = useState(true);
