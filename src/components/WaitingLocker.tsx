@@ -1,7 +1,7 @@
-import { CircularProgress } from "@mui/material"
 import Image from "next/image";
 
 const WaitingLocker = ({ waiting, msg = "Waiting" }: { waiting: boolean, msg?: string }) => {
+
   return (
     <div
       style={{
@@ -24,10 +24,10 @@ const WaitingLocker = ({ waiting, msg = "Waiting" }: { waiting: boolean, msg?: s
       <div className='w-2/3 md:w-1/4 min-h-[300px] bg-white rounded-md flex flex-col gap-2 justify-center items-center p-4'>
         <Image src="/trademarktoday_logo.png" alt="logo" loading="lazy" width={168} height={58} />
         <Image src={`/loading${Math.floor(Math.random() * 9)}.gif`} alt="logo" loading="lazy" width={108} height={58} />
-        {/* <CircularProgress color="secondary" /> */}
         <p className='text-[18px] font-mont leading-7'>{msg}...</p>
       </div>
     </div>
   )
 }
-export default WaitingLocker;
+
+export default WaitingLocker
