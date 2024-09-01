@@ -2,6 +2,7 @@ import Cookies from 'cookies';
 import jwt from 'jsonwebtoken'
 import { ADMIN_LIST, JWT_SIGN_KEY } from '@/types/utils';
 import { Context, User } from '@/types/interface';
+
 const ServerSidePropsAdminAuthorized = (context: Context) => {
   const cookies = new Cookies(context.req, context.res);
   const token = cookies.get('token');
@@ -29,6 +30,5 @@ const ServerSidePropsAdminAuthorized = (context: Context) => {
     };
   }
 
-
 }
-export default ServerSidePropsAdminAuthorized;
+export default ServerSidePropsAdminAuthorized
