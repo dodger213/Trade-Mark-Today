@@ -16,6 +16,7 @@ export const findByEmail = ({ req, res }: { req: Request, res: Response }, email
     res.status(200).json(results)
   })
 }
+
 export const insert = (req: Request, res: Response) => {
   // create a new user
   const { given_name, family_name, picture, email, name, password } = req.body
@@ -24,6 +25,7 @@ export const insert = (req: Request, res: Response) => {
     res.status(201).json([{ given_name, family_name, picture, email, name, password, ID: result.insertId }])
   })
 }
+
 export const update = (req: Request, res: Response) => {
   /// update a user by ID
   const { id, name, email } = req.body
@@ -32,6 +34,7 @@ export const update = (req: Request, res: Response) => {
     res.status(200).json({ message: 'User updated successfully' })
   })
 }
+
 export const remove = (req: Request, res: Response) => {
   // delete a user by ID
   const { id } = req.body
