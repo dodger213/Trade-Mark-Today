@@ -31,4 +31,5 @@ const ServerSidePropsAdminAuthorized = (context: Context) => {
   }
 
 }
+
 export default ServerSidePropsAdminAuthorized
