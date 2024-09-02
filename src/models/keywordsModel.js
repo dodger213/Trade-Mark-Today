@@ -10,4 +10,4 @@ const keywordsSchema = new mongoose.Schema({
 );
 const keywordsModel = mongoose.models.keywords || mongoose.model("keywords", keywordsSchema);
 
-export default keywordsModel;
+export default keywordsModel
