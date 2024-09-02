@@ -15,4 +15,5 @@ const productsSchema = new mongoose.Schema({
 );
 productsSchema.index({ product: 'text' });
 const ProductsModel = mongoose.models.products || mongoose.model("products", productsSchema);
-export default ProductsModel;
+
+export default ProductsModel
