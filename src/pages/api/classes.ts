@@ -1,7 +1,8 @@
 
 import ClassesModel from "@/models/classesModel";
 import { Request, Response } from "express";
-import connectToMongodb from '@/db/mongodb'
+import connectToMongodb from '@/db/mongodb';
+
 export default async function handler(req: Request, res: Response) {
   connectToMongodb();
   const { keywords } = req.body;
