@@ -19,4 +19,5 @@ const classSchema = new mongoose.Schema({
 );
 
 const proclassModel = mongoose.models.classes || mongoose.model("classes", classSchema);
+
 export default proclassModel;
