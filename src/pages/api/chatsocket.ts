@@ -2,7 +2,8 @@ import { Server, Socket } from "socket.io";
 import { Request, Response } from "express";
 import { DefaultEventsMap } from "socket.io/dist/typed-events";
 let channels: { channel: string, username: string }[] = [];
-export default function SocketHandler(req: any, res: any) {
+
+function SocketHandler(req: any, res: any) {
   // It means that socket server was already initialised
   if (res.socket.server.io) {
     console.log("Already set up");
@@ -60,3 +61,5 @@ export default function SocketHandler(req: any, res: any) {
   console.log("Setting up socket");
   res.end();
 }
+
+export default SocketHandler
