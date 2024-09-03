@@ -1,30 +1,27 @@
 import Nodemailer, { SentMessageInfo, SendMailOptions } from 'nodemailer';
 import { Request, Response } from 'express';
-export default function handler(req: Request, res: Response): void {
-    const { email, code } = req.query;
-    const transporter = Nodemailer.createTransport({
-        // host: 'smtp.gmail.com',
-        // port: 465,
-        // service: 'gmail',
-        // secure: true,
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
-        auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_AUTH
-        }
-    });
-    const mailOptions: SendMailOptions = {
-        from: process.env.GMAIL_USER,
-        to: email as string,
-        subject: 'Trademark today verfication',
-        html: `<div width="100%" style="margin:0;background-color:#f0f2f3">
 
+export default function handler(req: Request, res: Response): void {
+  const { email, code } = req.query;
+  const transporter = Nodemailer.createTransport({
+    // host: 'smtp.gmail.com',
+    // port: 465,
+    // service: 'gmail',
+    // secure: true,
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_AUTH
+    }
+  });
+  const mailOptions: SendMailOptions = {
+    from: process.env.GMAIL_USER,
+    to: email as string,
+    subject: 'Trademark today verfication',
+    html: `<div width="100%" style="margin:0;background-color:#f0f2f3">
         <div style="margin:auto;max-width:600px;padding-top:50px" class="m_-8293280590268341754email-container">
-    
-    
-    
             <table role="presentation" cellspacing="0" cellpadding="0" width="100%" align="center"
                 id="m_-8293280590268341754logoContainer"
                 style="background:#252f3d;border-radius:3px 3px 0 0;max-width:600px">
@@ -39,8 +36,6 @@ export default function handler(req: Request, res: Response): void {
                     </tr>
                 </tbody>
             </table>
-    
-    
             <table role="presentation" cellspacing="0" cellpadding="0" width="100%" align="center"
                 id="m_-8293280590268341754emailBodyContainer"
                 style="border:0px;border-bottom:1px solid #d6d6d6;max-width:600px">
@@ -96,15 +91,15 @@ export default function handler(req: Request, res: Response): void {
     
         </div>
     </div>`
-    };
-    transporter.sendMail(mailOptions, (error: Error | null, info: SentMessageInfo) => {
-        if (error) {
-            console.log(error);
-            res.status(200).json({ message: error })
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.status(200).json({ message: info.response })
-        }
-    });
-    //{"message":"250 2.0.0 OK  1687813731 hn8-20020a05600ca38800b003fa722e8b48sm11760285wmb.32 - gsmtp"}
+  };
+  transporter.sendMail(mailOptions, (error: Error | null, info: SentMessageInfo) => {
+    if (error) {
+      console.log(error);
+      res.status(200).json({ message: error })
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.status(200).json({ message: info.response })
+    }
+  });
+  //{"message":"250 2.0.0 OK  1687813731 hn8-20020a05600ca38800b003fa722e8b48sm11760285wmb.32 - gsmtp"}
 }
