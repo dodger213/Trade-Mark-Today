@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { find, findByEmail, insert, remove, update } from "@/controllers/users";
 import connectToMongodb from '@/db/mongodb'
+
 export default function handler(req: Request, res: Response) {
   connectToMongodb();
   try {
