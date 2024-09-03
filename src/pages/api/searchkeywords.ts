@@ -1,6 +1,7 @@
 import { getSynonyms, searchSimilarWordsFromKeywords } from "@/types/searchs";
 import { Request, Response } from "express";
 import connectToMongodb from '@/db/mongodb'
+
 export default async function handler(req: Request, res: Response) {
   connectToMongodb();
   const { id, keyword } = req.query;
