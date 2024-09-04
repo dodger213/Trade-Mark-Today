@@ -2,6 +2,7 @@ import ServerSidePropsAuthorized from '@/layout/ServerSidePropsAuthorized';
 import Chat from '@/components/Chat';
 import TMCheckLayout from '@/layout/TMCheckLayout';
 import { useRouter } from 'next/router';
+
 const Payfail = ({ email }: { email: string }) => {
   const router = useRouter();
   const reasonNumber = router.query.reason as string;
@@ -17,6 +18,9 @@ const Payfail = ({ email }: { email: string }) => {
     </>
   )
 }
+
 Payfail.getLayout = TMCheckLayout;
+
 export const getServerSideProps = ServerSidePropsAuthorized;
+
 export default Payfail;
