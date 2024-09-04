@@ -5,6 +5,7 @@ import TMCheckLayout from '@/layout/TMCheckLayout';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+
 const Paysuccess = ({ email }: { email: string }) => {
   const router = useRouter();
   const transactionKey = router.query.transactionKey as string;
@@ -31,6 +32,7 @@ const Paysuccess = ({ email }: { email: string }) => {
       router.push('/payres/fail?reason=3')
     });
   }, [])
+
   return (
     <>
       {waiting ?
@@ -47,6 +49,9 @@ const Paysuccess = ({ email }: { email: string }) => {
     </>
   )
 }
+
 Paysuccess.getLayout = TMCheckLayout;
+
 export const getServerSideProps = ServerSidePropsAuthorized;
+
 export default Paysuccess;
