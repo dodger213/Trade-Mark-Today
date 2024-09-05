@@ -5,6 +5,7 @@ import ServerSidePropsAdminAuthorized from '@/layout/ServerSidePropsAdminAuthori
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
+
 const AdminChat = ({ email }: { email: string }) => {
   const [allUsers, setAllUsers] = useState<User[]>([]);
   useEffect(() => {
@@ -59,6 +60,9 @@ const AdminChat = ({ email }: { email: string }) => {
     </>
   )
 }
+
 AdminChat.getLayout = TMCheckLayout;
+
 export const getServerSideProps = ServerSidePropsAdminAuthorized;
+
 export default AdminChat;
