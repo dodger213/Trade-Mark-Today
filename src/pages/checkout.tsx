@@ -5,6 +5,7 @@ import Image from 'next/image';
 import dotenv from 'dotenv'
 dotenv.config({ path: "./.env" });
 import { loadStripe } from '@stripe/stripe-js';
+
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string);
 
 import { useContext, useEffect, useState } from 'react';
@@ -27,6 +28,7 @@ const ChecoutItemA = ({ title, msg }: { title: string, msg: string }) => {
     </>
   )
 }
+
 const Checkout = ({ email }: { email: string }) => {
   const { pinia, setPinia } = useContext(PiniaStore);
   const [price, setPrice] = useState(0)
@@ -62,6 +64,7 @@ const Checkout = ({ email }: { email: string }) => {
       console.error(result.error.message);
     }
   };
+
   return (
     <>
       <main className='max-w-7xl mx-auto px-6 py-4'>
@@ -111,6 +114,9 @@ const Checkout = ({ email }: { email: string }) => {
     </>
   )
 }
+
 Checkout.getLayout = TMCheckLayout;
+
 export const getServerSideProps = ServerSidePropsAuthorized;
+
 export default Checkout;
