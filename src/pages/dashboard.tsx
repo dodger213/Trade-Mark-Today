@@ -7,6 +7,7 @@ import Chat from '@/components/Chat';
 import { useContext, useEffect } from 'react';
 import { PiniaStore } from '@/store/store';
 import { useRouter } from 'next/router';
+
 const Dashboard = ({ email }: { email: string }) => {
   const { pinia, setPinia } = useContext(PiniaStore);
   const router = useRouter();
@@ -16,15 +17,16 @@ const Dashboard = ({ email }: { email: string }) => {
   //         return;
   //     }      
   // }, [pinia])
+
   useEffect(()=>{
     router.push('/checkout')
   },[])
+
   return (
     <>
       <main className='max-w-7xl mx-auto px-6 py-4'>
         <div className="grid gap-y-6">
           <h1 className='font-mont text-3xl'>Dashboard Test</h1>
-
           <Alert3 msg={
             <>
               This page is only for testing purpose. <strong>You can see this page because you have logged in.</strong>
@@ -36,6 +38,9 @@ const Dashboard = ({ email }: { email: string }) => {
     </>
   )
 }
+
 Dashboard.getLayout = TMCheckLayout;
+
 export const getServerSideProps = ServerSidePropsAuthorized;
+
 export default Dashboard;
