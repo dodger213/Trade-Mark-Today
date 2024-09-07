@@ -16,10 +16,12 @@ const Consider = () => {
   const [checked, setChecked] = useState(false);
   const [showAlertForCheck, setShowAlertForCheck] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+
   useEffect(() => {
     if (pinia?.acceptedTerms === undefined) return;
     setChecked(pinia?.acceptedTerms as boolean)
   }, [pinia])
+
   const handleClick = () => {
     if (!checked) {
       setShowAlertForCheck(true)
@@ -29,11 +31,13 @@ const Consider = () => {
       router.push("/select")
     }
   }
+
   const handleCheck = (e: React.ChangeEvent<HTMLInputElement>) => {
     setChecked(e.target.checked)
     setShowAlertForCheck(!e.target.checked);
     setPinia({ ...pinia, acceptedTerms: e.target.checked })
   }
+
   return (
     <>
       <main className='max-w-7xl mx-auto px-6 py-4'>
@@ -100,5 +104,7 @@ const Consider = () => {
     </>
   )
 }
+
 Consider.getLayout = TMCheckLayout;
+
 export default Consider;
