@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { User } from '@/types/interface';
 import axios from 'axios';
+
 const Profile = ({ email }: { email: string }) => {
   const [user, setUser] = useState<User>()
   useEffect(() => {
@@ -53,6 +54,9 @@ const Profile = ({ email }: { email: string }) => {
     </>
   )
 }
+
 Profile.getLayout = TMCheckLayout;
+
 export const getServerSideProps = ServerSidePropsAuthorized;
+
 export default Profile;
