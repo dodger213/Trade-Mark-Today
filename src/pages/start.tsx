@@ -83,5 +83,7 @@ const Start = () => {
     </main>
   )
 }
+
 Start.getLayout = TMCheckLayout;
+
 export default Start;
